@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sobre + Carta (Abre/Cierra con click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Querida Machita.</strong>
+                        <p>
+                            Me encantaría que este día lo podamos vivir de una manera diferente, algo más juntos, como comiendo unos ricos
+                            fideos bien cremosos con queso, y a la tarde una súper chocolatada chocolatosa y facturitas, pero como ahora
+                            mismo eso no es posible, desde la distancia espero que pases un hermoso día, te extraño muchísimo y espero que
+                            estés bien, que te pasen cosas buenas hoy, y siempre, te quiero mushito Machita ❤️‍🩹
+                            <span class="firma">Alvaro G.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
